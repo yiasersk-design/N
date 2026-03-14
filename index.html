@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Meta AI Note Maker</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="manifest" href="manifest.json">
+    
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="apple-touch-icon" href="icon-192x192.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
      
@@ -917,12 +924,12 @@ if (typeof window.originalProcessMessage === 'undefined') {
                 <h2 class="text-[18px] font-bold text-gray-800">Template Gallery</h2>
                 <button id="closeTemplateBtn" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors focus:outline-none"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"></path></svg></button>
             </header>
-            <div class="flex-1 overflow-y-auto py-6 flex flex-col gap-8">
+            <div class="flex-1 overflow-y-auto py-4 flex flex-col gap-3">
                 
                 <!-- Text Structure Templates -->
                 <section>
-                    <h3 class="text-[15px] font-semibold text-gray-500 uppercase tracking-wider mb-4 px-4">Text Structure</h3>
-                    <div class="flex overflow-x-auto gap-3 px-4 pb-2 hide-scrollbar snap-x">                         <div class="template-box w-[100px] flex-shrink-0 aspect-square bg-[#f8fafc] rounded-xl shadow-sm border-2 border-dashed border-gray-300 flex flex-col items-center justify-center cursor-pointer relative overflow-hidden snap-start hover:bg-gray-50 transition-colors" onclick="applyTemplateDirectly('structure', 'none', event)">
+                    <h3 class="text-[15px] font-semibold text-gray-500 uppercase tracking-wider mb-1.5 px-4">Text Structure</h3>
+<div class="flex overflow-x-auto gap-3 px-4 pb-1 hide-scrollbar snap-x">                         <div class="template-box w-[100px] flex-shrink-0 aspect-square bg-[#f8fafc] rounded-xl shadow-sm border-2 border-dashed border-gray-300 flex flex-col items-center justify-center cursor-pointer relative overflow-hidden snap-start hover:bg-gray-50 transition-colors" onclick="applyTemplateDirectly('structure', 'none', event)">
                             <svg class="w-7 h-7 text-gray-400 mb-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
                             <span class="text-[13px] font-semibold text-gray-500">None</span>
                         </div>
@@ -947,8 +954,8 @@ if (typeof window.originalProcessMessage === 'undefined') {
 
                 <!-- Stylish Bengali Headings -->
                 <section>
-                    <h3 class="text-[15px] font-semibold text-gray-500 uppercase tracking-wider mb-4 px-4">Stylish Headings (Bengali)</h3>
-                    <div class="flex overflow-x-auto gap-3 px-4 pb-4 hide-scrollbar snap-x">
+                    <h3 class="text-[15px] font-semibold text-gray-500 uppercase tracking-wider mb-1.5 px-4">Stylish Headings (Bengali)</h3>
+<div class="flex overflow-x-auto gap-3 px-4 pb-1 hide-scrollbar snap-x">
                         <div class="template-box w-[100px] flex-shrink-0 aspect-square bg-[#f8fafc] rounded-xl shadow-sm border-2 border-dashed border-gray-300 flex flex-col items-center justify-center cursor-pointer relative overflow-hidden snap-start hover:bg-gray-50 transition-colors" onclick="applyTemplateDirectly('stylish', 'none', event)">
                             <svg class="w-7 h-7 text-gray-400 mb-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
                             <span class="text-[13px] font-semibold text-gray-500">None</span>
@@ -1023,8 +1030,8 @@ if (typeof window.originalProcessMessage === 'undefined') {
                 </section>
                 <!-- Page Heading Templates -->
                 <section>
-                    <h3 class="text-[15px] font-semibold text-gray-500 uppercase tracking-wider mb-4 px-4">Page Headers</h3>
-                    <div class="flex overflow-x-auto gap-3 px-4 pb-4 hide-scrollbar snap-x">
+                    <h3 class="text-[15px] font-semibold text-gray-500 uppercase tracking-wider mb-1.5 px-4">Page Headers</h3>
+<div class="flex overflow-x-auto gap-3 px-4 pb-1 hide-scrollbar snap-x">
                         
                         <div class="template-box w-[100px] flex-shrink-0 aspect-square bg-[#f8fafc] rounded-xl shadow-sm border-2 border-dashed border-gray-300 flex flex-col items-center justify-center cursor-pointer relative overflow-hidden snap-start hover:bg-gray-50 transition-colors" onclick="applyTemplateDirectly('heading', 'none', event)">
                             <svg class="w-7 h-7 text-gray-400 mb-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
@@ -1048,8 +1055,8 @@ if (typeof window.originalProcessMessage === 'undefined') {
 
                 <!-- Watermark Templates -->
                 <section>
-                    <h3 class="text-[15px] font-semibold text-gray-500 uppercase tracking-wider mb-4 px-4">Watermarks</h3>
-                    <div class="flex overflow-x-auto gap-3 px-4 pb-4 hide-scrollbar snap-x">
+                    <h3 class="text-[15px] font-semibold text-gray-500 uppercase tracking-wider mb-1.5 px-4">Watermarks</h3>
+<div class="flex overflow-x-auto gap-3 px-4 pb-1 hide-scrollbar snap-x">
                         
                         <div class="template-box w-[100px] flex-shrink-0 aspect-square bg-[#f8fafc] rounded-xl shadow-sm border-2 border-dashed border-gray-300 flex flex-col items-center justify-center cursor-pointer relative overflow-hidden snap-start hover:bg-gray-50 transition-colors" onclick="applyTemplateDirectly('watermark', 'none', event)">
                             <svg class="w-7 h-7 text-gray-400 mb-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
